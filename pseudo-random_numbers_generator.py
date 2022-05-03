@@ -1,5 +1,5 @@
-from random import uniform
-
+from random import uniform,seed
+seed(31)
 
 def gerar_numero_aleatorio():
     '''A seed para o gerador é o horario atual do sistema, vide documentação.'''
