@@ -1,9 +1,9 @@
-from random import uniform,seed
+from random import uniform,seed,randint
 seed(31)
 
 def gerar_numero_aleatorio():
     '''A seed para o gerador é o horario atual do sistema, vide documentação.'''
-    return uniform(0, 1000)
+    return randint(0, 1000)
 
 
 def gerar_arquivo_de_numeros_aleatorios(quantidade_de_linhas=10, quantidade_por_linha=100):
