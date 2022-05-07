@@ -1,5 +1,17 @@
-from random import uniform,seed,randint
-seed(31)
+# ------------------------------------------------------------
+# Gerador de números aleatórios, Metaheurísticas
+# Dupla: Tamara D. Carvalho, Luan P. Cunha.
+#
+# Para executar o programa, execute a seguinte linha de comando no terminal:
+# python pseudo-random_numbers_generator.py
+#
+# Será criado o arquivo numeros_aleatorios.txt com 10 linhas, sendo cada uma com 100 números inteiros
+#
+# Repositório no github: https://github.com/LuanPCunha/meta-heristica
+# ------------------------------------------------------------
+
+from random import randint
+
 
 def gerar_numero_aleatorio():
     '''A seed para o gerador é o horario atual do sistema, vide documentação.'''
