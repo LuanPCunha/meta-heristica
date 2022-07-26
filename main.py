@@ -2,6 +2,7 @@ import time
 import math
 
 from metodos_construtivos import *
+from grasp import *
 
 arq = "data_TSP/att48_d.txt"
 #arq = "data_TSP/dantzig42_d.txt"
@@ -37,13 +38,17 @@ if __name__ == '__main__':
     #Vizinho mais próximo
     t_inicio = time.time()
     tam_rota, rota, tamanhos_cidades = vizinho_mais_proximo(data, len(data))
-    print('Vizinho mais próximo: ', tam_rota)
+    print('Vizinho mais próximo: ', tam_rota, rota)
     print('Tempo de execução: ', (time.time() - t_inicio))
 
     #Inserção mais barata
     t_inicio = time.time()
     tam_rota, rota, tamanhos_cidades = insercao_mais_barata(data, len(data))
-    print('Inserção mais barata: ', tam_rota)
+    print('Inserção mais barata: ', tam_rota, rota)
     print('Tempo de execução: ', (time.time() - t_inicio))
 
-    
+    #Opt2
+    t_inicio = time.time()
+    rota = n2_opt(data, rota, tam_rota)
+    print('Opt2: ', rota)
+    print('Tempo de execução: ', (time.time() - t_inicio))

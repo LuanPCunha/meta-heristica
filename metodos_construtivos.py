@@ -23,7 +23,6 @@ def vizinho_mais_proximo(matriz, qtd_cidades):
         atual = cidade_vizinha
     tam_rota += matriz[atual][cidade]
     tamanhos_cidades.append(matriz[atual][cidade])
-    rota.append(cidade)
     return tam_rota, rota, tamanhos_cidades
 
 
