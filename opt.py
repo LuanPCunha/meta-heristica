@@ -10,8 +10,8 @@ def calc_tam_rota(matriz, rota):
     return tam_rota
 
 
-def n2_opt(matriz, rota, tam_rota):
-    estavel, melhor_tam, melhor_rota = False, tam_rota, rota
+def n2_opt(matriz, rota):
+    estavel, melhor_tam, melhor_rota = False, calc_tam_rota(matriz, rota), rota
     while not estavel:
         estavel = True
         for i in range(1, len(matriz) - 1):

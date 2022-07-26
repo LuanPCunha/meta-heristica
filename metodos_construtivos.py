@@ -23,7 +23,7 @@ def vizinho_mais_proximo(matriz, qtd_cidades):
         atual = cidade_vizinha
     tam_rota += matriz[atual][cidade]
     tamanhos_cidades.append(matriz[atual][cidade])
-    return tam_rota, rota, tamanhos_cidades
+    return tam_rota, rota
 
 
 
@@ -57,4 +57,4 @@ def insercao_mais_barata(matriz, qtd_cidades):
         tamanhos_cidades.append(dist)
     tam_rota += matriz[rota[-1]][rota[0]]
     tamanhos_cidades.append(matriz[rota[-1]][rota[0]])
-    return tam_rota, rota, tamanhos_cidades
+    return tam_rota, rota
