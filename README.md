@@ -6,7 +6,7 @@
 
 ## :one: Sobre o Projeto
 
-Trabalho desenvolvido durante o semestre para a disciplina de meta-heurísticas.
+GRASP para o Problema do Caixeiro Viajente (PCV)
 * Dupla: Tamara D. Carvalho, Luan P. Cunha.
 
 ## :two: Tecnologias
@@ -24,11 +24,5 @@ $ git clone https://github.com/LuanPCunha/meta-heristica.git
 * É necessário ter o Python instalado.
 
 ```bash
-$ python .\pseudo-random_numbers_generator.py
+$ python main.py
 ```
-
-## :closed_book: Licencia
-
-Lançado em 2022 :closed_book: Licencia
-
-Esse projeto esta sobre [MIT license](./LICENSE).

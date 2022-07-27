@@ -1,14 +1,6 @@
 from itertools import cycle, islice, dropwhile
 import numpy as np
-
-
-def calc_tam_rota(matriz, rota):
-    tam_rota = 0
-    for x in range(len(rota) - 1):
-        tam_rota += matriz[rota[x]][rota[x + 1]]
-    tam_rota += matriz[rota[-1]][rota[0]]
-    return tam_rota
-
+from utils import *
 
 def n2_opt(matriz, rota):
     estavel, melhor_tam, melhor_rota = False, calc_tam_rota(matriz, rota), rota

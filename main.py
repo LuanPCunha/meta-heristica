@@ -42,14 +42,14 @@ if __name__ == '__main__':
     # Vizinho mais próximo
     t_inicio = time.time()
     print()
-    tam_rota, rota = vizinho_mais_proximo(matriz, len(matriz))
+    tam_rota, rota = vizinho_mais_proximo(matriz, len(matriz), maisAleatorio=False)
     print('Vizinho mais próximo: ', tam_rota, rota)
     print('Tempo de execução: ', (time.time() - t_inicio))
 
     # Inserção mais barata
     t_inicio = time.time()
     print()
-    tam_rota, rota = insercao_mais_barata(matriz, len(matriz))
+    tam_rota, rota = insercao_mais_barata(matriz, len(matriz), maisAleatorio=False)
     print('Inserção mais barata: ', tam_rota, rota)
     print('Tempo de execução: ', (time.time() - t_inicio))
 
