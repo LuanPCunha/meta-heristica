@@ -18,7 +18,7 @@ Esse projeto foi feito utilizando as seguintes tecnologias:
 
 ```bash
 # Clone o Repositório
-$ git clone https://github.com/LuanPCunha/meta-heristica.git
+$ git clone https://github.com/LuanPCunha/metaheurstica.git
 ```
 
 * É necessário ter o Python instalado.
